@@ -67,6 +67,7 @@ export class increment_decrement{
         if((this.value=="" )|| (this.value=="NaN")){
             return (this.value=1);
         }
+        
 
         if(this.value>=0){
             this.value=parseInt(this.value) + 1;
