@@ -58,12 +58,16 @@ export class increment_decrement{
             this.value=this.value-1;
             return this.value;
         }
-
         else{
             return this.value;
         }
     }
     incre(){
+
+        if((this.value=="" )|| (this.value=="NaN")){
+            return (this.value=1);
+        }
+
         if(this.value>=0){
             this.value=parseInt(this.value) + 1;
            return this.value;
@@ -71,5 +75,6 @@ export class increment_decrement{
         else{
             return this.value;
         }
+
     }
 }
